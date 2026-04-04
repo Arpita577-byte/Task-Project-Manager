@@ -1,0 +1,103 @@
+package com.taskmanager.service;
+
+import com.taskmanager.enums.Priority;
+import com.taskmanager.enums.Status;
+import com.taskmanager.models.Project;
+import com.taskmanager.models.Task;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ProjectServiceTest {
+
+    private ProjectService service;
+
+    @BeforeEach
+    void setUp() {
+        service = new ProjectService();
+    }
+
+    @Test
+    void testCreateProject() {
+        Project project = service.createProject("New Project", "Description");
+        assertNotNull(project);
+        assertNotNull(project.getId());
+        assertEquals("New Project", project.getName());
+
+        List<Project> projects = service.getAllProjects();
+        assertEquals(1, projects.size());
+    }
+
+    @Test
+    void testCreateTask() {
+        Project project = service.createProject("Project A", "Desc");
+        Task task = service.createTask(project.getId(), "Task 1", "Do something", Priority.HIGH, null);
+
+        assertNotNull(task);
+        assertEquals("Task 1", task.getTitle());
+        assertEquals(project.getId(), task.getProjectId());
+    }
+
+    @Test
+    void testGetTasksByProject() {
+        Project p = service.createProject("P1", "");
+        service.createTask(p.getId(), "T1", "", Priority.LOW, null);
+        service.createTask(p.getId(), "T2", "", Priority.MEDIUM, null);
+
+        List<Task> tasks = service.getTasksByProject(p.getId());
+        assertEquals(2, tasks.size());
+    }
+
+    @Test
+    void testUpdateTaskStatus() {
+        Project p = service.createProject("P", "");
+        Task t = service.createTask(p.getId(), "Task", "", Priority.HIGH, null);
+
+        service.updateTaskStatus(t.getId(), Status.IN_PROGRESS);
+        assertEquals(Status.IN_PROGRESS, t.getStatus());
+    }
+
+    @Test
+    void testMarkTaskCompleted() {
+        Project p = service.createProject("P", "");
+        Task t = service.createTask(p.getId(), "Task", "", Priority.HIGH, null);
+
+        service.markTaskCompleted(t.getId());
+        assertEquals(Status.COMPLETED, t.getStatus());
+    }
+
+    @Test
+    void testGetOverdueTasks() {
+        Project p = service.createProject("Project", "");
+        LocalDateTime past = LocalDateTime.now().minusDays(10);
+
+        service.createTask(p.getId(), "Normal", "", Priority.MEDIUM, LocalDateTime.now().plusDays(5));
+        Task overdue = service.createTask(p.getId(), "Overdue", "", Priority.HIGH, past);
+
+        List<Task> overdueTasks = service.getOverdueTasks();
+        assertTrue(overdueTasks.contains(overdue));
+    }
+
+    @Test
+    void testProjectProgress() {
+        Project p = service.createProject("Progress Test", "");
+        service.createTask(p.getId(), "T1", "", Priority.LOW, null);
+        service.createTask(p.getId(), "T2", "", Priority.LOW, null);
+
+        assertEquals(0.0, service.getProjectProgress(p.getId()), 0.001);
+
+        service.markTaskCompleted(service.getTasksByProject(p.getId()).get(0).getId());
+        assertEquals(50.0, service.getProjectProgress(p.getId()), 0.001);
+    }
+
+    @Test
+    void testDeleteProject() {
+        Project p = service.createProject("To Delete", "");
+        service.deleteProject(p.getId());
+        assertTrue(service.getAllProjects().isEmpty());
+    }
+}
