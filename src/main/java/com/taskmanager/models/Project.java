@@ -1,6 +1,6 @@
 package com.taskmanager.models;
 
-import com.taskmanager.enums.Status;   // ← This line was missing
+import com.taskmanager.enums.Status;   // ← This is the important missing line
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
