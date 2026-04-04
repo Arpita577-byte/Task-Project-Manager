@@ -1,5 +1,6 @@
 package com.taskmanager.models;
 
+import com.taskmanager.enums.Status;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

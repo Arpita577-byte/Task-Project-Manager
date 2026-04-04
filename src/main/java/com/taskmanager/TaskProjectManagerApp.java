@@ -1,5 +1,6 @@
 package com.taskmanager;
 
+import com.taskmanager.ui.MainFrame;
 import com.taskmanager.enums.Priority;
 import com.taskmanager.enums.Status;
 import com.taskmanager.models.Project;
@@ -18,6 +19,7 @@ public class TaskProjectManagerApp {
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public static void main(String[] args) {
+        new MainFrame();
         System.out.println("=====================================");
         System.out.println("   Task & Project Manager CLI v1.0   ");
         System.out.println("=====================================");

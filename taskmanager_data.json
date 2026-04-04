@@ -1,0 +1,123 @@
+{
+  "projects": [
+    {
+      "id": "ac2b5eef-8c70-4525-b247-e5c76d76f0e9",
+      "name": "java",
+      "description": "group project",
+      "startDate": "2026-04-04T22:31:01.718439200",
+      "createdAt": "2026-04-04T22:31:01.718439200",
+      "updatedAt": "2026-04-05T00:00:59.391161600",
+      "tasks": [
+        {
+          "id": "0057260c-b47f-4d79-9c88-0aa999d4bdfb",
+          "title": "heyaa!!!!",
+          "description": "done",
+          "status": "PENDING",
+          "priority": "MEDIUM",
+          "dueDate": "2026-04-12T00:00:59.391161600",
+          "createdAt": "2026-04-05T00:00:59.391161600",
+          "updatedAt": "2026-04-05T00:00:59.391161600",
+          "projectId": "ac2b5eef-8c70-4525-b247-e5c76d76f0e9",
+          "tags": [],
+          "estimatedHours": 0
+        }
+      ]
+    },
+    {
+      "id": "0006200c-3b8c-4476-829f-6cd33ce72d0c",
+      "name": "cli + gui project",
+      "description": "group12",
+      "startDate": "2026-04-05T00:01:57.356168",
+      "createdAt": "2026-04-05T00:01:57.356168",
+      "updatedAt": "2026-04-05T00:02:35.494133700",
+      "tasks": [
+        {
+          "id": "be2d0d59-90b6-4fec-a0dd-5bb3ca65125a",
+          "title": "add cli",
+          "description": "cli",
+          "status": "PENDING",
+          "priority": "MEDIUM",
+          "dueDate": "2026-04-12T00:02:19.979106500",
+          "createdAt": "2026-04-05T00:02:19.979106500",
+          "updatedAt": "2026-04-05T00:02:19.979106500",
+          "projectId": "0006200c-3b8c-4476-829f-6cd33ce72d0c",
+          "tags": [],
+          "estimatedHours": 0
+        },
+        {
+          "id": "4f9b6c3e-afd6-43c1-be1d-28a7abb7da3b",
+          "title": "update gui",
+          "description": "gui",
+          "status": "PENDING",
+          "priority": "LOW",
+          "dueDate": "2026-04-12T00:02:35.494133700",
+          "createdAt": "2026-04-05T00:02:35.494133700",
+          "updatedAt": "2026-04-05T00:02:35.494133700",
+          "projectId": "0006200c-3b8c-4476-829f-6cd33ce72d0c",
+          "tags": [],
+          "estimatedHours": 0
+        }
+      ]
+    },
+    {
+      "id": "1eb284a2-f6f0-4666-967a-e0096cf36f93",
+      "name": "JavaGP",
+      "description": "Group Project",
+      "startDate": "2026-04-04T23:33:04.519142500",
+      "createdAt": "2026-04-04T23:33:04.519142500",
+      "updatedAt": "2026-04-04T23:52:09.792511600",
+      "tasks": [
+        {
+          "id": "06f06b18-2238-4a17-8eee-c77633cd4c19",
+          "title": "add ui",
+          "description": "add ui",
+          "status": "COMPLETED",
+          "priority": "MEDIUM",
+          "createdAt": "2026-04-04T23:43:46.682840700",
+          "updatedAt": "2026-04-05T00:01:26.591984700",
+          "projectId": "1eb284a2-f6f0-4666-967a-e0096cf36f93",
+          "tags": [],
+          "estimatedHours": 0
+        },
+        {
+          "id": "d5f06379-9e05-44ec-8f7b-062b6f8f36e5",
+          "title": "upadte ui",
+          "description": "add new buttons and options in this project",
+          "status": "COMPLETED",
+          "priority": "HIGH",
+          "createdAt": "2026-04-04T23:52:09.792511600",
+          "updatedAt": "2026-04-04T23:52:39.251436700",
+          "projectId": "1eb284a2-f6f0-4666-967a-e0096cf36f93",
+          "tags": [],
+          "estimatedHours": 0
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "06f06b18-2238-4a17-8eee-c77633cd4c19",
+      "title": "add ui",
+      "description": "add ui",
+      "status": "COMPLETED",
+      "priority": "MEDIUM",
+      "createdAt": "2026-04-04T23:43:46.682840700",
+      "updatedAt": "2026-04-04T23:51:44.796172600",
+      "projectId": "1eb284a2-f6f0-4666-967a-e0096cf36f93",
+      "tags": [],
+      "estimatedHours": 0
+    },
+    {
+      "id": "d5f06379-9e05-44ec-8f7b-062b6f8f36e5",
+      "title": "upadte ui",
+      "description": "add new buttons and options in this project",
+      "status": "COMPLETED",
+      "priority": "HIGH",
+      "createdAt": "2026-04-04T23:52:09.792511600",
+      "updatedAt": "2026-04-04T23:52:39.251436700",
+      "projectId": "1eb284a2-f6f0-4666-967a-e0096cf36f93",
+      "tags": [],
+      "estimatedHours": 0
+    }
+  ]
+}

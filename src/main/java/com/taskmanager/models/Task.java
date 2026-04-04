@@ -11,6 +11,7 @@ import java.util.UUID;
 
 public class Task {
     private final String id;
+    private String name;
     private String title;
     private String description;
     private Status status;
@@ -23,7 +24,7 @@ public class Task {
     private int estimatedHours;
 
     // Constructor
-    public Task(String title, String description, Priority priority, LocalDateTime dueDate, String projectId) {
+    public Task(String title, String description, Priority priority, LocalDateTime dueDate, String projectId, String name) {
         this.id = UUID.randomUUID().toString();
         this.title = title;
         this.description = description;
@@ -39,6 +40,7 @@ public class Task {
 
     // Getters
     public String getId() { return id; }
+    public String getName() { return name; }
     public String getTitle() { return title; }
     public String getDescription() { return description; }
     public Status getStatus() { return status; }
