@@ -1,0 +1,16 @@
+## Adding New Features
+
+1. Add business logic in `ProjectService.java`
+2. Extend models if needed (`Task.java` or `Project.java`)
+3. Update CLI in `TaskProjectManagerApp.java`
+4. Write tests in appropriate test class
+
+## Running Locally
+
+Use IntelliJ IDEA or VS Code with Maven support.
+
+## Code Style
+
+- Follow standard Java naming conventions
+- Use meaningful variable names
+- Add Javadoc for public methods
