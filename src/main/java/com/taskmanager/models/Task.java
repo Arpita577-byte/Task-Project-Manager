@@ -22,6 +22,7 @@ public class Task {
     private List<String> tags;
     private int estimatedHours;
 
+    // Constructor
     public Task(String title, String description, Priority priority, LocalDateTime dueDate, String projectId) {
         this.id = UUID.randomUUID().toString();
         this.title = title;
@@ -36,32 +37,45 @@ public class Task {
         this.estimatedHours = 0;
     }
 
-    // Getters and Setters
+    // Getters
     public String getId() { return id; }
     public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; updateTimestamp(); }
     public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; updateTimestamp(); }
     public Status getStatus() { return status; }
-    public void setStatus(Status status) { this.status = status; updateTimestamp(); }
     public Priority getPriority() { return priority; }
-    public void setPriority(Priority priority) { this.priority = priority; updateTimestamp(); }
     public LocalDateTime getDueDate() { return dueDate; }
-    public void setDueDate(LocalDateTime dueDate) { this.dueDate = dueDate; updateTimestamp(); }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public LocalDateTime getUpdatedAt() { return updatedAt; }
     public String getProjectId() { return projectId; }
-    public void setProjectId(String projectId) { this.projectId = projectId; updateTimestamp(); }
     public List<String> getTags() { return new ArrayList<>(tags); }
-    public void addTag(String tag) { this.tags.add(tag); updateTimestamp(); }
-    public void removeTag(String tag) { this.tags.remove(tag); updateTimestamp(); }
     public int getEstimatedHours() { return estimatedHours; }
+
+    // Setters with timestamp update
+    public void setTitle(String title) { this.title = title; updateTimestamp(); }
+    public void setDescription(String description) { this.description = description; updateTimestamp(); }
+    public void setStatus(Status status) { this.status = status; updateTimestamp(); }
+    public void setPriority(Priority priority) { this.priority = priority; updateTimestamp(); }
+    public void setDueDate(LocalDateTime dueDate) { this.dueDate = dueDate; updateTimestamp(); }
+    public void setProjectId(String projectId) { this.projectId = projectId; updateTimestamp(); }
     public void setEstimatedHours(int estimatedHours) { this.estimatedHours = estimatedHours; updateTimestamp(); }
+
+    public void addTag(String tag) {
+        if (!tags.contains(tag)) {
+            tags.add(tag);
+            updateTimestamp();
+        }
+    }
+
+    public void removeTag(String tag) {
+        tags.remove(tag);
+        updateTimestamp();
+    }
 
     private void updateTimestamp() {
         this.updatedAt = LocalDateTime.now();
     }
 
+    // Business methods
     public boolean isOverdue() {
         return dueDate != null && dueDate.isBefore(LocalDateTime.now()) && status != Status.COMPLETED;
     }
@@ -91,7 +105,8 @@ public class Task {
 
     @Override
     public String toString() {
-        return String.format("Task[%s] %s - %s (Priority: %s, Status: %s)", 
-                id.substring(0, 8), title, status, priority, dueDate != null ? dueDate.toLocalDate() : "No due date");
+        return String.format("[%s] %s | %s | Priority: %s | Due: %s",
+                id.substring(0, 8), title, status, priority,
+                dueDate != null ? dueDate.toLocalDate() : "No due date");
     }
 }
