@@ -63,12 +63,12 @@ public class ProjectTaskRepository implements IRepository<Object> {
         return Optional.empty();
     }
 
-    @SuppressWarnings("unchecked")
+    // @SuppressWarnings("unchecked")
     public List<Project> findAllProjects() {
         return new ArrayList<>(projects.values());
     }
 
-    @SuppressWarnings("unchecked")
+    // @SuppressWarnings("unchecked")
     public List<Task> findAllTasks() {
         return new ArrayList<>(tasks.values());
     }
