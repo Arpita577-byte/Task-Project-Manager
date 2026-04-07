@@ -20,7 +20,6 @@ Now upgraded with **Swing-based Graphical User Interface** for better user exper
 
 ### Project Management
 - Create, view, edit, and delete projects
-- Beautiful project cards with progress bars
 - Project details with completion percentage
 
 ### Task Management
