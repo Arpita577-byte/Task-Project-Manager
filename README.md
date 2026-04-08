@@ -154,6 +154,6 @@ task-project-manager/
 ---
 
 ### License
-This project is licensed under the MIT License.
+This project is developed under academic and educational purposes only.
   
 
