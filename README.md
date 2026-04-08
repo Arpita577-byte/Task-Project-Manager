@@ -1,4 +1,4 @@
-#Project & Task Management Application
+## Project and Task Management Application
 
 This is a **Java Swing-based desktop application** developed to help users efficiently manage **projects, tasks, deadlines, and priorities** through a clean, organized, and interactive dashboard interface.
 
@@ -131,18 +131,19 @@ TaskZen/
 ```
 ---
 
-📂 Module Description
-1. main Package
+## 📂 Module Description
+## 1. main Package
 Main.java
 
 This is the entry point of the application.
 
-Responsibilities:
+## Responsibilities:
 
 Launches the GUI using SwingUtilities.invokeLater()
 Initializes the main application window
 Ensures safe execution on the Event Dispatch Thread (EDT)
-2. model Package
+
+## 2. model Package
 
 This package contains the data model classes used in the application.
 
@@ -173,7 +174,8 @@ Functions include:
 Mark task as completed
 Mark task as pending
 Access and modify task details
-3. service Package
+
+## 3. service Package
 TaskService.java
 
 This is the business logic layer of the application.
@@ -191,7 +193,8 @@ This class acts as the bridge between:
 
 UI Layer
 Data Models
-4. ui Package
+
+## 4. ui Package
 
 This package contains all graphical user interface components.
 
@@ -199,7 +202,7 @@ MainFrame.java
 
 The main application window.
 
-Responsibilities:
+## Responsibilities:
 
 Builds the dashboard layout
 Integrates:
@@ -213,7 +216,7 @@ ProjectPanel.java
 
 Responsible for managing project-related operations.
 
-Features:
+## Features:
 
 Display available projects
 Add new projects
@@ -223,10 +226,10 @@ TaskPanel.java
 
 Responsible for task-related operations.
 
-Features:
+## Features:
 
 Add new tasks
-Set:
+Set
 Title
 Date
 Time
@@ -237,7 +240,7 @@ Mark tasks as completed
 
 This panel serves as the main working area of the application.
 
-🖥️ User Interface Design
+## 🖥️ User Interface Design
 
 The application follows a dashboard-style desktop interface to provide a cleaner and more modern user experience.
 
@@ -254,8 +257,9 @@ Clean layout
 Easy navigation
 Better visual hierarchy
 Improved user experience compared to a default Swing application
-⚙️ Working of the Application
-Step 1 – Launch the Application
+
+## ⚙️ Working of the Application
+## Step 1 – Launch the Application
 
 When the application starts:
 
@@ -264,14 +268,16 @@ Default projects are displayed:
 Personal
 Work
 College
-Step 2 – Select a Project
+
+## Step 2 – Select a Project
 
 The user selects a project from the sidebar.
 
 Once selected:
 
 Tasks belonging to that project are loaded into the main panel
-Step 3 – Add a Task
+
+## Step 3 – Add a Task
 
 The user enters:
 
@@ -284,7 +290,7 @@ Then clicks Add Task.
 
 The task is added under the selected project.
 
-Step 4 – Manage Tasks
+## Step 4 – Manage Tasks
 
 The user can:
 
@@ -297,7 +303,8 @@ The user can:
 
 Add a new project
 Delete an existing project
-🔄 Application Workflow
+
+## 🔄 Application Workflow
 User Action
    ↓
 UI Layer (Swing Panels)
@@ -309,7 +316,7 @@ Project / Task Models
 Updated UI Display
 🧠 Concepts Applied
 
-This project demonstrates the practical implementation of the following concepts:
+## This project demonstrates the practical implementation of the following concepts:
 
 Core Java Concepts
 Classes and Objects
@@ -332,7 +339,7 @@ UI Styling
 🚀 How to Run the Project
 Requirements
 
-Make sure the following are installed:
+## Make sure the following are installed:
 
 Java JDK 8 or above
 Any Java IDE such as:
@@ -357,7 +364,7 @@ College
 
 These can be used immediately for testing and demonstration.
 
-📈 Future Enhancements
+## 📈 Future Enhancements
 
 This project can be further improved by adding:
 
@@ -374,14 +381,15 @@ Export tasks to file
 
 These enhancements can make the application more aligned with real-world productivity tools.
 
-✅ Advantages
+## ✅ Advantages
 Easy to use
 Clean and organized dashboard
 Supports project-wise task management
 Demonstrates practical Java GUI development
 Suitable as an academic mini project
 Modular and extendable code structure
-⚠️ Limitations
+
+## ⚠️ Limitations
 
 Current limitations of the project include:
 
@@ -393,7 +401,7 @@ Date and time are entered manually
 
 These limitations are acceptable for a mini project and can be improved in future versions.
 
-📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 Through this project, the following outcomes were achieved:
 
@@ -402,7 +410,8 @@ Applying OOP concepts in a practical project
 Designing modular Java applications
 Implementing event-driven user interfaces
 Building a complete GUI-based management system
-👩‍💻 Authors
+
+## 👩‍💻 Authors
 Shria Biju
 Shwet Singh
 Shreya Chimote
