@@ -342,7 +342,7 @@ NetBeans
 VS Code (with Java extensions)
 Steps to Run
 Clone the repository
-git clone https://github.com/shriabiju/task-manager.git
+git clone git clone https://github.com/Arpita577-byte/Task-Project-Manager.git
 Open the project in your preferred Java IDE
 Navigate to
 main/Main.java
