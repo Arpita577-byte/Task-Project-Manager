@@ -150,7 +150,7 @@ task-project-manager/
 - Web version using Spring Boot + Thymeleaf or JavaFX
 - Calendar view and analytics reports
 - User authentication and team collaboration
-
+- Installation of user friendly report.
 ---
 
 ### License
