@@ -153,6 +153,28 @@ task-project-manager/
 - Installation of user friendly report.
 ---
 
+
+## ✅ Advantages
+
+- Easy to manage projects and tasks in one place  
+- User-friendly interface with Swing UI  
+- Supports task prioritization and status tracking  
+- Real-time progress visualization  
+- Persistent data storage using JSON  
+- Clean separation of UI and business logic  
+
+---
+
+## ⚠️ Limitations
+
+- Desktop-based application (no web/mobile support)  
+- Limited scalability for large teams  
+- No real-time collaboration between multiple users  
+- Lacks cloud integration  
+- Basic UI compared to modern web apps
+
+---
+
 ### License
 This project is developed under academic and educational purposes only.
   
