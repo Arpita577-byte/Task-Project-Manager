@@ -6,22 +6,6 @@ This project was created as an **academic mini project / internal submission** t
 
 ---
 
-## 📸 Demo
-
-<p align="center">
-  <img src="./1.png" alt="TaskZen Demo 1" width="800"/>
-</p>
-
-<p align="center">
-  <img src="./2.png" alt="TaskZen Demo 2" width="800"/>
-</p>
-
-<p align="center">
-  <img src="./3.png" alt="TaskZen Demo 3" width="800"/>
-</p>
-
----
-
 ## 📌 Project Overview
 
 TaskZen provides a centralized workspace where users can:
