@@ -35,6 +35,7 @@ Now upgraded with **Swing-based Graphical User Interface** for better user exper
 - Responsive and modern Swing UI
 - Persistent data storage (JSON)
 - Clean separation of UI and business logic
+- Claer usage of java showcased in the project.
 
 ---
 
