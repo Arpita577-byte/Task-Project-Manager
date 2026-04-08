@@ -80,6 +80,8 @@ java -jar target/task-project-manager-1.0.0-jar-with-dependencies.jar
 
 6) Responsive layout for better usability
 
+7) Easy for the user to navigate through
+
 ### Data Persistence
 
 -All projects and tasks are automatically saved in taskmanager_data.json
