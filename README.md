@@ -163,14 +163,12 @@ Count completed and pending tasks
 Task.java
 
 Represents an individual task with:
-
 Task title
 Deadline
 Priority
 Completion status
 
 Functions include:
-
 Mark task as completed
 Mark task as pending
 Access and modify task details
@@ -181,7 +179,6 @@ TaskService.java
 This is the business logic layer of the application.
 
 Responsibilities:
-
 Manage all projects
 Add and delete projects
 Add and delete tasks
@@ -262,7 +259,6 @@ Improved user experience compared to a default Swing application
 ## Step 1 – Launch the Application
 
 When the application starts:
-
 The main window opens
 Default projects are displayed:
 Personal
@@ -280,7 +276,6 @@ Tasks belonging to that project are loaded into the main panel
 ## Step 3 – Add a Task
 
 The user enters:
-
 Task name
 Date
 Time
@@ -293,7 +288,6 @@ The task is added under the selected project.
 ## Step 4 – Manage Tasks
 
 The user can:
-
 Select a task
 Mark it as completed
 Delete it if needed
@@ -305,6 +299,7 @@ Add a new project
 Delete an existing project
 
 ## 🔄 Application Workflow
+
 User Action
    ↓
 UI Layer (Swing Panels)
@@ -354,10 +349,10 @@ Open the project in your preferred Java IDE
 Navigate to
 main/Main.java
 Run Main.java
+
 ▶️ Default Projects
 
 When the application launches, the following sample projects are available by default:
-
 Personal
 Work
 College
@@ -367,7 +362,6 @@ These can be used immediately for testing and demonstration.
 ## 📈 Future Enhancements
 
 This project can be further improved by adding:
-
 File / database storage for persistent data
 Task editing functionality
 Project rename / edit option
@@ -382,6 +376,7 @@ Export tasks to file
 These enhancements can make the application more aligned with real-world productivity tools.
 
 ## ✅ Advantages
+
 Easy to use
 Clean and organized dashboard
 Supports project-wise task management
@@ -392,7 +387,6 @@ Modular and extendable code structure
 ## ⚠️ Limitations
 
 Current limitations of the project include:
-
 Data is stored only in memory during runtime
 No file/database persistence
 No user authentication
